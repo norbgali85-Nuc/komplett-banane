@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garten — komplett banane</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+  :root{
+    --black: #171009;
+    --paper: #efe4cd;
+    --paper-dim: #cbbd9e;
+    --yellow: #f2b705;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0; height:100%;
+    background: var(--black);
+    font-family:'Space Grotesk', sans-serif;
+    color: var(--paper);
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+  }
+  a{ color: var(--yellow); text-decoration:none; border-bottom:1px solid var(--yellow); }
+  a:hover{ color: var(--paper); border-color: var(--paper); }
+  .wrap{ max-width:32rem; padding: 2rem; }
+  h1{
+    font-family:'Fraunces', serif; font-weight:900; font-style:italic;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin: 0 0 1rem;
+  }
+  p{ color: var(--paper-dim); font-size:1.05rem; line-height:1.6; margin: 0 0 1.5rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Der Garten wächst noch.</h1>
+    <p>Hier kommt was hin, sobald es so weit ist.</p>
+    <a href="index.html">← zurück zur komplett banane</a>
+  </div>
+</body>
+</html>
