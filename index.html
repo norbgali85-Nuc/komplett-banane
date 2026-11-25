@@ -106,18 +106,41 @@
     ::-webkit-scrollbar-thumb:hover { background: #39ff14; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-[#39ff14] selection:text-black">
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#39ff14] selection:text-black overflow-x-hidden">
 
   <!-- Main Content -->
   <main class="max-w-3xl mx-auto px-4 py-12 flex-1 w-full space-y-10">
 
     <!-- 1. Hero Block -->
-    <section class="bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-10 space-y-4">
+    <section class="relative bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-10 space-y-4">
+      
+      <!-- Riesige Neon-Pinke Banane -->
+      <div class="absolute -top-5 -right-2 sm:-top-7 sm:-right-5 md:-top-9 md:-right-7 w-24 sm:w-36 md:w-48 pointer-events-auto group cursor-pointer z-10 select-none" title="Komplett Banane">
+        <svg viewBox="0 0 220 220" class="w-full h-full drop-shadow-[5px_5px_0px_#000000] sm:drop-shadow-[6px_6px_0px_#000000] group-hover:drop-shadow-[8px_8px_0px_#39ff14] transition-all duration-150 transform rotate-12 group-hover:rotate-6 group-hover:scale-105">
+          <!-- Kantiger Bananenkörper in Neon-Pink -->
+          <path d="M168,26 L186,38 L178,56 C188,108 164,162 112,188 C74,207 34,202 14,186 L24,170 C54,176 92,164 122,134 C148,108 158,72 152,44 L168,26 Z" 
+                fill="#ff0099" 
+                stroke="#000000" 
+                stroke-width="6" 
+                stroke-linejoin="miter" />
+          <!-- Stiel-Spitze in Schwarz -->
+          <polygon points="168,26 186,38 179,52 162,40" fill="#000000" />
+          <!-- Spitze unten links in Schwarz -->
+          <polygon points="14,186 24,170 34,176 22,192" fill="#000000" />
+          <!-- Harte Siebdruck-Highlight-Linie -->
+          <path d="M156,64 C156,104 136,142 98,166" 
+                fill="none" 
+                stroke="#ffffff" 
+                stroke-width="4" 
+                stroke-linecap="square" />
+        </svg>
+      </div>
+
       <div class="inline-block bg-black text-[#f1b300] text-xs font-bold px-3 py-1 uppercase tracking-widest">
         KULTUR · LIVE-MUSIK · ORTENBURG
       </div>
       
-      <h1 class="banane-glitch-title text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none">
+      <h1 class="banane-glitch-title text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none pr-16 sm:pr-24">
         KOMPLETT BANANE
       </h1>
       
