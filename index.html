@@ -25,6 +25,13 @@
       font-family: 'Oswald', sans-serif;
     }
 
+    /* Unterschwellige Neon-Kante / chromatische Irritation */
+    .banane-glitch-title {
+      color: #000000;
+      -webkit-text-stroke: 1px #39ff14;
+      text-shadow: 1.5px 1.5px 0px #39ff14;
+    }
+
     /* Brutalist Card & Neon Hover */
     .brutal-card {
       border: 3px solid #f1b300;
@@ -110,7 +117,7 @@
         KULTUR · LIVE-MUSIK · ORTENBURG
       </div>
       
-      <h1 class="text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none">
+      <h1 class="banane-glitch-title text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none">
         KOMPLETT BANANE
       </h1>
       
@@ -174,12 +181,15 @@
       </div>
     </section>
 
-    <!-- 4. Hinweis Grosn Simma -->
+    <!-- 4. Merch & Siebdruck Partner: Grosn Simma -->
     <section class="bg-[#1a1714] brutal-card p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-      <div class="text-sm text-neutral-300">
-        <span class="font-bold text-white uppercase">Werkstatt &amp; Modellage:</span> Die Skulpturen-Projekte ziehen um zu <span class="text-[#f1b300] font-bold">Grosn Simma</span>.
+      <div class="space-y-1">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-[#39ff14] block">GEAR &amp; SIEBDRUCK BY GROSN SIMMA</span>
+        <p class="text-sm text-neutral-300">
+          Die geilsten Shirts und handgedruckten Plakate auf Hanfpapier kommen aus der Siebdruck-Küche von <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="text-[#f1b300] hover:text-[#39ff14] font-bold underline underline-offset-2 transition-colors">Grosn Simma</a>.
+        </p>
       </div>
-      <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-black text-[#f1b300] hover:bg-[#39ff14] hover:text-black border-2 border-[#f1b300] hover:border-black px-3 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors shrink-0">
+      <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-black text-[#f1b300] hover:bg-[#39ff14] hover:text-black border-2 border-[#f1b300] hover:border-black px-3.5 py-2 text-xs font-bold uppercase tracking-wider transition-colors shrink-0">
         grosnsimma.de
         <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
       </a>
