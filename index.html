@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Komplett Banane — Werkstatt & Blütenfest</title>
+  <title>Komplett Banane — Kultur, Konzerte &amp; Blütenfest</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -25,127 +25,146 @@
       font-family: 'Oswald', sans-serif;
     }
 
-    /* Override Brevo Default Styles for Yellow/Black Design */
+    /* Brutalist Card & Neon Hover */
+    .brutal-card {
+      border: 3px solid #f1b300;
+      box-shadow: 6px 6px 0px #f1b300;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .brutal-card:hover {
+      border-color: #39ff14;
+      box-shadow: 8px 8px 0px #39ff14;
+      transform: translate(-2px, -2px);
+    }
+
+    .brutal-card-dark {
+      border: 3px solid #000000;
+      box-shadow: 6px 6px 0px #000000;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .brutal-card-dark:hover {
+      border-color: #39ff14;
+      box-shadow: 8px 8px 0px #39ff14;
+      transform: translate(-2px, -2px);
+    }
+
+    /* Override Brevo Default Styles */
     #sib-container {
-      background-color: #f1b300 !important;
+      background-color: transparent !important;
       border: none !important;
-      border-radius: 8px !important;
-      padding: 1.5rem !important;
+      padding: 0 !important;
       max-width: 100% !important;
     }
 
-    #sib-container input[type="text"], 
     #sib-container input[type="email"] {
       background-color: #110f0d !important;
       color: #ffffff !important;
-      border: 2px solid #000000 !important;
-      border-radius: 4px !important;
-      padding: 0.75rem 1rem !important;
+      border: 3px solid #000000 !important;
+      border-radius: 0px !important;
+      padding: 0.85rem 1rem !important;
       font-weight: 700 !important;
+      font-family: 'Space Grotesk', sans-serif !important;
+    }
+
+    #sib-container input[type="email"]:focus {
+      border-color: #39ff14 !important;
+      outline: none !important;
     }
 
     #sib-container button.sib-form-block__button {
       background-color: #000000 !important;
       color: #f1b300 !important;
       font-family: 'Oswald', sans-serif !important;
-      font-size: 1rem !important;
+      font-size: 1.1rem !important;
       letter-spacing: 1px !important;
-      border-radius: 4px !important;
-      padding: 0.75rem 1.5rem !important;
+      border: 3px solid #000000 !important;
+      border-radius: 0px !important;
+      padding: 0.85rem 1.75rem !important;
       text-transform: uppercase !important;
-      font-weight: 900 !important;
+      font-weight: 700 !important;
+      transition: all 0.15s ease !important;
     }
 
     #sib-container button.sib-form-block__button:hover {
-      background-color: #26201b !important;
+      background-color: #39ff14 !important;
+      color: #000000 !important;
+      border-color: #000000 !important;
     }
 
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #110f0d; }
-    ::-webkit-scrollbar-thumb { background: #26201b; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #f1b300; }
+    ::-webkit-scrollbar-thumb { background: #f1b300; }
+    ::-webkit-scrollbar-thumb:hover { background: #39ff14; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-yellow-400 selection:text-black">
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#39ff14] selection:text-black">
 
   <!-- Main Content -->
-  <main class="max-w-3xl mx-auto px-4 py-8 flex-1 w-full space-y-10">
-    
-    <!-- Hero Title -->
-    <section class="text-center space-y-4 pt-4">
-      <div>
-        <span class="inline-block bg-[#f1b300] text-black text-xs font-black px-3 py-1 uppercase tracking-wider rounded-sm">
-          PROTOTYPING &amp; SCULPTURE LAB
-        </span>
+  <main class="max-w-3xl mx-auto px-4 py-12 flex-1 w-full space-y-10">
+
+    <!-- 1. Hero Block -->
+    <section class="bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-10 space-y-4">
+      <div class="inline-block bg-black text-[#f1b300] text-xs font-bold px-3 py-1 uppercase tracking-widest">
+        KULTUR · LIVE-MUSIK · ORTENBURG
       </div>
       
-      <h1 class="text-5xl sm:text-7xl font-oswald font-bold uppercase tracking-normal leading-none text-[#f1b300] py-1">
+      <h1 class="text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none">
         KOMPLETT BANANE
       </h1>
       
-      <div class="border-t border-b border-neutral-800 py-2.5 max-w-xl mx-auto">
-        <p class="text-neutral-300 font-bold tracking-[0.2em] text-xs sm:text-sm uppercase">
-          MODELLAGE · FORMENBAU · BLÜTENFEST
+      <p class="text-lg sm:text-xl font-bold max-w-xl leading-snug pt-1">
+        Konzerte, Kulturveranstaltungen und das kommende Blütenfest.
+      </p>
+    </section>
+
+    <!-- 2. Blütenfest & Projekte Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-6">
+        <div class="space-y-2">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#39ff14]">IN PLANUNG</span>
+          <h2 class="text-3xl font-oswald font-bold uppercase text-[#f1b300]">BLÜTENFEST</h2>
+          <p class="text-sm text-neutral-300 leading-relaxed">
+            Ein Kulturfestival mit Live-Musik, Kleinkunst und entspannter Atmosphäre.
+          </p>
+        </div>
+        <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 border-t border-neutral-800 pt-3">
+          INFOS FOLGEN ÜBER DEN NEWSLETTER
+        </div>
+      </div>
+
+      <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-6">
+        <div class="space-y-2">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#f1b300]">KONTAKT &amp; BOOKING</span>
+          <h2 class="text-3xl font-oswald font-bold uppercase text-white">MITMACHEN</h2>
+          <p class="text-sm text-neutral-300 leading-relaxed">
+            Bands, Künstler, Orte oder Ideen für gemeinsame Kulturabende? Einfach melden.
+          </p>
+        </div>
+        <a href="mailto:hallo@komplett-banane.de" class="inline-flex items-center gap-2 text-sm font-bold uppercase text-[#f1b300] hover:text-[#39ff14] transition-colors border-t border-neutral-800 pt-3">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          hallo@komplett-banane.de
+        </a>
+      </div>
+    </section>
+
+    <!-- 3. Newsletter Block (Brevo) -->
+    <section id="newsletter" class="bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-8 space-y-4">
+      <div class="space-y-1">
+        <h2 class="text-3xl sm:text-4xl font-oswald font-bold uppercase tracking-tight">
+          AB UND ZU POST.
+        </h2>
+        <p class="text-sm sm:text-base font-bold text-neutral-900">
+          Termine fürs Blütenfest und neue Veranstaltungen direkt ins Postfach.
         </p>
       </div>
-    </section>
 
-    <!-- Sculpt Showcase / Gallery Viewer -->
-    <section class="bg-[#1a1714] border-2 border-[#f1b300] rounded-lg overflow-hidden shadow-2xl">
-      <div class="p-4 border-b border-neutral-800 flex justify-between items-center bg-[#110f0d]/60">
-        <div>
-          <span class="text-[10px] uppercase text-[#f1b300] font-bold tracking-widest block">AKTUELLER SCULPT</span>
-          <h2 id="view-title" class="text-base md:text-lg font-bold uppercase text-white">HORDAK CLAY SCULPT — PROTOTYP #01 (PROFIL 3/4)</h2>
-        </div>
-        <button id="fullscreen-btn" onclick="toggleFullscreen()" class="p-2 hover:bg-neutral-800 rounded text-neutral-400 hover:text-white transition-colors" title="Vollbild">
-          <i data-lucide="maximize-2" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-      <!-- Main Image Frame -->
-      <div class="relative aspect-4/3 md:aspect-16/10 bg-black flex items-center justify-center overflow-hidden">
-        <img id="main-sculpt-img" 
-             src="1000035246.jpg" 
-             alt="Hordak Sculpt Prototype" 
-             class="w-full h-full object-contain transition-all duration-200"
-             onerror="this.onerror=null; this.src='https://placehold.co/800x600/1a1a1a/f1b300?text=1000035246.jpg';" />
-      </div>
-
-      <!-- Gallery Thumbnails (5 Ansichten) -->
-      <div class="p-3 bg-[#110f0d] border-t border-neutral-800 grid grid-cols-5 gap-2">
-        <button onclick="switchView(0)" class="thumb-btn border-2 border-[#f1b300] rounded overflow-hidden aspect-square bg-neutral-900 focus:outline-none">
-          <img src="1000035246.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150/1a1a1a/f1b300?text=View+1';" />
-        </button>
-        <button onclick="switchView(1)" class="thumb-btn border-2 border-transparent hover:border-neutral-700 rounded overflow-hidden aspect-square bg-neutral-900 focus:outline-none">
-          <img src="1000035245.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150/1a1a1a/f1b300?text=View+2';" />
-        </button>
-        <button onclick="switchView(2)" class="thumb-btn border-2 border-transparent hover:border-neutral-700 rounded overflow-hidden aspect-square bg-neutral-900 focus:outline-none">
-          <img src="1000035244.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150/1a1a1a/f1b300?text=View+3';" />
-        </button>
-        <button onclick="switchView(3)" class="thumb-btn border-2 border-transparent hover:border-neutral-700 rounded overflow-hidden aspect-square bg-neutral-900 focus:outline-none">
-          <img src="1000035220.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150/1a1a1a/f1b300?text=View+4';" />
-        </button>
-        <button onclick="switchView(4)" class="thumb-btn border-2 border-transparent hover:border-neutral-700 rounded overflow-hidden aspect-square bg-neutral-900 focus:outline-none">
-          <img src="1000035216.jpg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150/1a1a1a/f1b300?text=View+5';" />
-        </button>
-      </div>
-    </section>
-
-    <!-- Newsletter Section (Integriertes Brevo Formular) -->
-    <section id="newsletter" class="bg-[#f1b300] text-black rounded-lg p-6 shadow-xl text-center space-y-3">
-      <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight">
-        AB UND ZU POST.
-      </h2>
-      <p class="text-neutral-900 font-bold text-sm md:text-base">
-        Termine fürs Blütenfest &amp; seltene Einblicke in die Banane.
-      </p>
-
-      <!-- BREVO FORM CONTAINER -->
-      <div id="sib-container" class="max-w-md mx-auto">
+      <div id="sib-container">
         <form id="sib-form" method="POST" action="https://6c05a257.sibforms.com/serve/MUIFAPqmlrySF_B4WU9K3hvu8s-Ajo8FffBwehwMbEJSb8EnuRpXiIzBkrBVOU55vXCDV1pLMHaT8oUNP2qyQu23tSMf3PcrHSMWB2IiOEqsOiYaH-rFDQPTgDb3nY64jwW7fA9GNk81IoVyAUjSR2ANx--RAU3xf1Qanr181Cmqra1IhqNEtIpQwm6Wa1o994PLyw8Uq_iTheATdw==" data-type="subscription">
-          <div class="flex flex-col sm:flex-row gap-2">
-            <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="deine@mail.de" data-required="true" required />
-            <button class="sib-form-block__button" form="sib-form" type="submit">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input class="input flex-1" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="deine@mail.de" data-required="true" required />
+            <button class="sib-form-block__button cursor-pointer" form="sib-form" type="submit">
               DABEISEIN
             </button>
           </div>
@@ -155,25 +174,35 @@
       </div>
     </section>
 
+    <!-- 4. Hinweis Grosn Simma -->
+    <section class="bg-[#1a1714] brutal-card p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="text-sm text-neutral-300">
+        <span class="font-bold text-white uppercase">Werkstatt &amp; Modellage:</span> Die Skulpturen-Projekte ziehen um zu <span class="text-[#f1b300] font-bold">Grosn Simma</span>.
+      </div>
+      <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-black text-[#f1b300] hover:bg-[#39ff14] hover:text-black border-2 border-[#f1b300] hover:border-black px-3 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors shrink-0">
+        grosnsimma.de
+        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+      </a>
+    </section>
+
   </main>
 
-  <!-- Footer -->
-  <footer class="py-6 text-center text-xs text-neutral-500 space-y-2 border-t border-neutral-900 bg-[#0d0c0a]">
-    <div>
-      <a href="mailto:hallo@komplett-banane.de" class="hover:text-[#f1b300] transition-colors font-mono">hallo@komplett-banane.de</a>
-    </div>
-    <div class="flex justify-center gap-4 text-neutral-400">
-      <button onclick="openModal('impressum')" class="hover:underline">Impressum</button>
+  <!-- 5. Footer -->
+  <footer class="py-8 text-center text-xs text-neutral-500 space-y-2 border-t-2 border-neutral-900 bg-[#0d0c0a]">
+    <div class="flex justify-center gap-4 text-neutral-400 font-bold uppercase tracking-wider">
+      <a href="mailto:hallo@komplett-banane.de" class="hover:text-[#39ff14] transition-colors">Kontakt</a>
       <span>·</span>
-      <button onclick="openModal('datenschutz')" class="hover:underline">Datenschutz</button>
+      <button onclick="openModal('impressum')" class="hover:text-[#39ff14] transition-colors uppercase">Impressum</button>
+      <span>·</span>
+      <button onclick="openModal('datenschutz')" class="hover:text-[#39ff14] transition-colors uppercase">Datenschutz</button>
     </div>
     <p>&copy; 2026 Komplett Banane</p>
   </footer>
 
   <!-- Modal Container -->
-  <div id="modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-[#1a1714] border-2 border-[#f1b300] max-w-xl w-full max-h-[80vh] rounded p-6 overflow-y-auto relative text-sm space-y-4">
-      <button onclick="closeModal()" class="absolute top-4 right-4 text-[#f1b300] font-bold">
+  <div id="modal" class="fixed inset-0 bg-black/85 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#1a1714] brutal-card max-w-xl w-full max-h-[80vh] p-6 overflow-y-auto relative text-sm space-y-4">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-[#f1b300] hover:text-[#39ff14] font-bold cursor-pointer">
         <i data-lucide="x" class="w-6 h-6"></i>
       </button>
       <div id="modal-content"></div>
@@ -183,42 +212,6 @@
   <script>
     lucide.createIcons();
 
-    const views = [
-      { img: '1000035246.jpg', title: 'HORDAK CLAY SCULPT — PROTOTYP #01 (PROFIL 3/4)' },
-      { img: '1000035245.jpg', title: 'HORDAK CLAY SCULPT — FRONTALANSICHT' },
-      { img: '1000035244.jpg', title: 'HORDAK CLAY SCULPT — PERSPEKTIVE OBEN' },
-      { img: '1000035220.jpg', title: 'HORDAK CLAY SCULPT — DETAIL ZÄHNE & HELM' },
-      { img: '1000035216.jpg', title: 'HORDAK CLAY SCULPT — WERKSTATT & SETUP' }
-    ];
-
-    function switchView(index) {
-      const mainImg = document.getElementById('main-sculpt-img');
-      const viewTitle = document.getElementById('view-title');
-      
-      mainImg.src = views[index].img;
-      viewTitle.innerText = views[index].title;
-
-      const thumbs = document.querySelectorAll('.thumb-btn');
-      thumbs.forEach((thumb, i) => {
-        if (i === index) {
-          thumb.classList.add('border-[#f1b300]');
-          thumb.classList.remove('border-transparent');
-        } else {
-          thumb.classList.remove('border-[#f1b300]');
-          thumb.classList.add('border-transparent');
-        }
-      });
-    }
-
-    function toggleFullscreen() {
-      const img = document.getElementById('main-sculpt-img');
-      if (img.requestFullscreen) {
-        img.requestFullscreen();
-      } else if (img.webkitRequestFullscreen) {
-        img.webkitRequestFullscreen();
-      }
-    }
-
     function openModal(type) {
       const modal = document.getElementById('modal');
       const content = document.getElementById('modal-content');
@@ -226,21 +219,21 @@
 
       if (type === 'impressum') {
         content.innerHTML = `
-          <h2 class="text-xl font-black text-[#f1b300] mb-2 uppercase">IMPRESSUM</h2>
+          <h2 class="text-2xl font-oswald font-bold text-[#f1b300] mb-2 uppercase">IMPRESSUM</h2>
           <p class="text-neutral-300">Angaben gemäß § 5 TMG:</p>
           <p class="mt-2 text-neutral-400">
-            <strong>Komplett Banane</strong><br>
+            <strong class="text-white">Komplett Banane</strong><br>
             Norbert Galiger<br>
-            Ortenburg, Deutschland<br>
+            94496 Ortenburg, Deutschland<br>
             E-Mail: hallo@komplett-banane.de
           </p>
         `;
       } else if (type === 'datenschutz') {
         content.innerHTML = `
-          <h2 class="text-xl font-black text-[#f1b300] mb-2 uppercase">DATENSCHUTZ</h2>
-          <p class="text-neutral-300">1. Datenschutz auf einen Blick</p>
-          <p class="mt-1 text-neutral-400 text-xs">
-            Wir verarbeiten personenbezogene Daten (E-Mail-Adresse) ausschließlich zum Versand unseres Newsletters über Brevo (DSGVO-konform). Die Einwilligung kann jederzeit widerrufen werden.
+          <h2 class="text-2xl font-oswald font-bold text-[#f1b300] mb-2 uppercase">DATENSCHUTZ</h2>
+          <p class="text-neutral-300 font-bold">1. Datenschutz auf einen Blick</p>
+          <p class="mt-1 text-neutral-400 text-xs leading-relaxed">
+            Wir verarbeiten personenbezogene Daten (E-Mail-Adresse) ausschließlich zum Versand unseres Newsletters über Brevo (DSGVO-konform). Die Einwilligung kann jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an hallo@komplett-banane.de widerrufen werden.
           </p>
         `;
       }
@@ -249,6 +242,11 @@
     function closeModal() {
       document.getElementById('modal').classList.add('hidden');
     }
+
+    // Modal schließen bei Klick außerhalb
+    document.getElementById('modal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
 
     window.REQUIRED_CODE_ERROR_MESSAGE = 'Bitte wählen Sie eine Vorwahl aus.';
     window.LOCALE = 'de';
