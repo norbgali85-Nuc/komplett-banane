@@ -109,7 +109,7 @@
       max-width: 100% !important;
     }
 
-    #sib-container input[type="email"] {
+    #sib-container #sib-form input[type="email"] {
       background-color: #110f0d !important;
       color: #ffffff !important;
       border: 3px solid #000000 !important;
@@ -120,12 +120,12 @@
       transition: border-color 0.15s ease !important;
     }
 
-    #sib-container input[type="email"]:focus {
+    #sib-container #sib-form input[type="email"]:focus {
       border-color: #39ff14 !important;
       outline: none !important;
     }
 
-    #sib-container button.sib-form-block__button {
+    #sib-container #sib-form button.sib-form-block__button {
       background-color: #000000 !important;
       color: #f1b300 !important;
       font-family: 'Oswald', sans-serif !important;
@@ -136,9 +136,10 @@
       padding: 0.85rem 1.75rem !important;
       text-transform: uppercase !important;
       font-weight: 700 !important;
+      cursor: pointer !important;
     }
 
-    #sib-container button.sib-form-block__button:hover {
+    #sib-container #sib-form button.sib-form-block__button:hover {
       animation: pinkToGreenBtn 0.22s ease forwards !important;
       border-color: #000000 !important;
     }
@@ -157,7 +158,7 @@
 <body class="min-h-screen flex flex-col justify-between selection:bg-[#39ff14] selection:text-black overflow-x-hidden">
 
   <!-- Main Content -->
-  <main class="max-w-3xl mx-auto px-4 py-12 flex-1 w-full space-y-10">
+  <main class="max-w-3xl mx-auto px-4 py-12 flex-1 w-full space-y-8">
 
     <!-- 1. Hero Block -->
     <section class="bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-10 space-y-4">
@@ -169,32 +170,32 @@
         KOMPLETT BANANE
       </h1>
       
-      <p class="text-lg sm:text-xl font-bold max-w-xl leading-snug pt-1">
-        Eine Idee wächst: Das Blütenfest in Ortenburg.
+      <p class="text-lg sm:text-xl font-bold leading-snug">
+        Blütenfest 2027 – in Planung.
       </p>
     </section>
 
-    <!-- 2. Blütenfest & Projekte Grid -->
+    <!-- 2. Blütenfest & Kontakt Grid -->
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-6">
+      <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-5">
         <div class="space-y-2">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#39ff14]">ZIEL 2027</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#39ff14]">2027</span>
           <h2 class="text-3xl font-oswald font-bold uppercase text-[#f1b300]">BLÜTENFEST</h2>
-          <p class="text-sm text-neutral-300 leading-relaxed">
-            Ein entspanntes kleines Kulturfest im Grünen – mit handgemachter Musik, gutem Essen und lokalen Köpfen.
+          <p class="text-sm text-neutral-300">
+            Kleines Kulturfest im Grünen. Musik, Essen, gute Leute.
           </p>
         </div>
         <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 border-t border-neutral-800 pt-3">
-          DERZEIT IN DEN ERSTEN VORBEREITUNGEN
+          START DER VORBEREITUNGEN
         </div>
       </div>
 
-      <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-6">
+      <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-5">
         <div class="space-y-2">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#f1b300]">AUSTAUSCH</span>
-          <h2 class="text-3xl font-oswald font-bold uppercase text-white">IDEEN &amp; ORTE</h2>
-          <p class="text-sm text-neutral-300 leading-relaxed">
-            Du hast Lust mitzudenken, kennst einen schönen Platz oder machst Musik? Schreib mir ganz unverbindlich.
+          <span class="text-xs font-bold uppercase tracking-widest text-[#f1b300]">KONTAKT</span>
+          <h2 class="text-3xl font-oswald font-bold uppercase text-white">MITDENKEN</h2>
+          <p class="text-sm text-neutral-300">
+            Platz, Musik oder Idee? Schreib mir.
           </p>
         </div>
         <a href="mailto:hallo@komplett-banane.de" class="inline-flex items-center gap-2 text-sm font-bold uppercase text-[#f1b300] hover:text-[#39ff14] transition-colors border-t border-neutral-800 pt-3">
@@ -211,7 +212,7 @@
           AB UND ZU POST.
         </h2>
         <p class="text-sm sm:text-base font-bold text-neutral-900">
-          Kein Spam – ich melde mich erst, wenn es fürs Blütenfest 2027 konkret wird.
+          Update, sobald das Blütenfest steht. Kein Spam.
         </p>
       </div>
 
@@ -219,7 +220,7 @@
         <form id="sib-form" method="POST" action="https://6c05a257.sibforms.com/serve/MUIFAPqmlrySF_B4WU9K3hvu8s-Ajo8FffBwehwMbEJSb8EnuRpXiIzBkrBVOU55vXCDV1pLMHaT8oUNP2qyQu23tSMf3PcrHSMWB2IiOEqsOiYaH-rFDQPTgDb3nY64jwW7fA9GNk81IoVyAUjSR2ANx--RAU3xf1Qanr181Cmqra1IhqNEtIpQwm6Wa1o994PLyw8Uq_iTheATdw==" data-type="subscription">
           <div class="flex flex-col sm:flex-row gap-3">
             <input class="input flex-1" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="deine@mail.de" data-required="true" required />
-            <button class="sib-form-block__button cursor-pointer" form="sib-form" type="submit">
+            <button class="sib-form-block__button" form="sib-form" type="submit">
               DABEISEIN
             </button>
           </div>
@@ -232,9 +233,9 @@
     <!-- 4. Merch & Siebdruck Partner: Grosn Simma -->
     <section class="bg-[#1a1714] brutal-card p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
       <div class="space-y-1">
-        <span class="text-[11px] font-bold uppercase tracking-widest text-[#39ff14] block">GEAR &amp; SIEBDRUCK BY GROSN SIMMA</span>
+        <span class="text-[11px] font-bold uppercase tracking-widest text-[#39ff14] block">GEAR &amp; SIEBDRUCK</span>
         <p class="text-sm text-neutral-300">
-          Die geilsten Shirts und handgedruckten Plakate auf Hanfpapier kommen aus der Siebdruck-Küche von <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="text-[#f1b300] hover:text-[#39ff14] font-bold underline underline-offset-2 transition-colors">Grosn Simma</a>.
+          Shirts &amp; Plakate auf Hanfpapier by <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="text-[#f1b300] hover:text-[#39ff14] font-bold underline underline-offset-2 transition-colors">Grosn Simma</a>.
         </p>
       </div>
       <a href="https://grosnsimma.de" target="_blank" rel="noopener noreferrer" class="pink-flash-btn inline-flex items-center gap-1.5 bg-black text-[#f1b300] border-2 border-[#f1b300] px-3.5 py-2 text-xs font-bold uppercase tracking-wider shrink-0">
