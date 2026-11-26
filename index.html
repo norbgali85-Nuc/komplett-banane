@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Komplett Banane — Kultur, Konzerte &amp; Blütenfest</title>
+  <title>Komplett Banane — Blütenfest &amp; Kultur</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -106,23 +106,63 @@
     ::-webkit-scrollbar-thumb:hover { background: #39ff14; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-[#39ff14] selection:text-black">
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#39ff14] selection:text-black overflow-x-hidden">
 
   <!-- Main Content -->
   <main class="max-w-3xl mx-auto px-4 py-12 flex-1 w-full space-y-10">
 
     <!-- 1. Hero Block -->
-    <section class="bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-10 space-y-4">
+    <section class="relative bg-[#f1b300] text-black brutal-card-dark p-6 sm:p-10 space-y-4">
+      
+      <!-- Eindeutige Siebdruck-Banane in Neon-Pink -->
+      <div class="absolute -top-6 -right-3 sm:-top-8 sm:-right-5 md:-top-10 md:-right-7 w-28 sm:w-40 md:w-52 pointer-events-auto group cursor-pointer z-10 select-none" title="Komplett Banane">
+        <svg viewBox="0 0 240 240" class="w-full h-full drop-shadow-[5px_5px_0px_#000000] sm:drop-shadow-[6px_6px_0px_#000000] group-hover:drop-shadow-[8px_8px_0px_#39ff14] transition-all duration-150 transform rotate-12 group-hover:rotate-6 group-hover:scale-105">
+          <!-- Bananen-Stiel oben rechts -->
+          <path d="M174,22 L192,16 L202,32 L188,44 Z" 
+                fill="#110f0d" 
+                stroke="#000000" 
+                stroke-width="5" 
+                stroke-linejoin="miter" />
+
+          <!-- Hauptkörper der Banane -->
+          <path d="M174,40 
+                   C192,52 198,84 188,122 
+                   C176,166 142,198 96,210 
+                   C64,218 36,212 18,198 
+                   L28,180 
+                   C48,186 72,184 98,174 
+                   C134,158 158,126 164,84 
+                   C167,64 166,48 174,40 Z" 
+                fill="#ff0099" 
+                stroke="#000000" 
+                stroke-width="6" 
+                stroke-linejoin="miter" />
+
+          <!-- Typische Schalen-Rippen / Facetten -->
+          <path d="M178,56 C184,96 168,144 134,174 C104,200 66,208 32,196" 
+                fill="none" 
+                stroke="#000000" 
+                stroke-width="4" />
+          <path d="M168,68 C166,112 142,152 104,176 C76,192 48,194 28,186" 
+                fill="none" 
+                stroke="#ffffff" 
+                stroke-width="3.5" />
+
+          <!-- Dunkle Spitze unten links -->
+          <polygon points="18,198 28,180 38,186 26,204" fill="#000000" />
+        </svg>
+      </div>
+
       <div class="inline-block bg-black text-[#f1b300] text-xs font-bold px-3 py-1 uppercase tracking-widest">
-        KULTUR · LIVE-MUSIK · ORTENBURG
+        ORTENBURG · KULTUR IN PLANUNG
       </div>
       
-      <h1 class="banane-glitch-title text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none">
+      <h1 class="banane-glitch-title text-5xl sm:text-7xl md:text-8xl font-oswald font-bold uppercase tracking-tight leading-none pr-16 sm:pr-24">
         KOMPLETT BANANE
       </h1>
       
       <p class="text-lg sm:text-xl font-bold max-w-xl leading-snug pt-1">
-        Konzerte, Kulturveranstaltungen und das kommende Blütenfest.
+        Eine Idee wächst: Das Blütenfest in Ortenburg.
       </p>
     </section>
 
@@ -130,23 +170,23 @@
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
       <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-6">
         <div class="space-y-2">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#39ff14]">IN PLANUNG</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#39ff14]">ZIEL 2027</span>
           <h2 class="text-3xl font-oswald font-bold uppercase text-[#f1b300]">BLÜTENFEST</h2>
           <p class="text-sm text-neutral-300 leading-relaxed">
-            Ein Kulturfestival mit Live-Musik, Kleinkunst und entspannter Atmosphäre.
+            Ein entspanntes kleines Kulturfest im Grünen – mit handgemachter Musik, gutem Essen und lokalen Köpfen.
           </p>
         </div>
         <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 border-t border-neutral-800 pt-3">
-          INFOS FOLGEN ÜBER DEN NEWSLETTER
+          DERZEIT IN DEN ERSTEN VORBEREITUNGEN
         </div>
       </div>
 
       <div class="bg-[#1a1714] brutal-card p-6 flex flex-col justify-between space-y-6">
         <div class="space-y-2">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#f1b300]">KONTAKT &amp; BOOKING</span>
-          <h2 class="text-3xl font-oswald font-bold uppercase text-white">MITMACHEN</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#f1b300]">AUSTAUSCH</span>
+          <h2 class="text-3xl font-oswald font-bold uppercase text-white">IDEEN &amp; ORTE</h2>
           <p class="text-sm text-neutral-300 leading-relaxed">
-            Bands, Künstler, Orte oder Ideen für gemeinsame Kulturabende? Einfach melden.
+            Du hast Lust mitzudenken, kennst einen schönen Platz oder machst Musik? Schreib mir ganz unverbindlich.
           </p>
         </div>
         <a href="mailto:hallo@komplett-banane.de" class="inline-flex items-center gap-2 text-sm font-bold uppercase text-[#f1b300] hover:text-[#39ff14] transition-colors border-t border-neutral-800 pt-3">
@@ -163,7 +203,7 @@
           AB UND ZU POST.
         </h2>
         <p class="text-sm sm:text-base font-bold text-neutral-900">
-          Termine fürs Blütenfest und neue Veranstaltungen direkt ins Postfach.
+          Kein Spam – ich melde mich erst, wenn es fürs Blütenfest 2027 konkret wird.
         </p>
       </div>
 
@@ -253,7 +293,6 @@
       document.getElementById('modal').classList.add('hidden');
     }
 
-    // Modal schließen bei Klick außerhalb
     document.getElementById('modal').addEventListener('click', function(e) {
       if (e.target === this) closeModal();
     });
